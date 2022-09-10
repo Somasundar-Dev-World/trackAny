@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: track-any-service-service
+  cloud:
+    kubernetes:
+      discovery:
+        register: true
+  jackson:
+    serialization:
+      indent-output: true
+
+server:
+  port: 8080
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+

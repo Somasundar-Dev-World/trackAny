@@ -1,0 +1,74 @@
+{
+  "templateId": "1",
+  "templateName": "Template_A",
+  "templateDescription": "Description",
+  "organization": "CitiGroup",
+  "templateForm": {
+    "field": [
+      {
+        "id": 1,
+        "name": "name",
+        "label": "Name",
+        "type": "text",
+        "defaultvalue": "Enter your Name",
+        "title": "Name"
+      },
+      {
+        "id": 2,
+        "name": "age",
+        "label": "Age",
+        "type": "text",
+        "defaultvalue": "Enter your Age",
+        "title": "Age"
+      },
+      {
+        "id": 3,
+        "name": "sex",
+        "label": "Sex",
+        "type": "radio",
+        "defaultvalue": "Enter your Sex",
+        "title": "Sex",
+        "option": [
+          {
+            "id": 1,
+            "name": "male",
+            "label": "Male",
+            "selected": true,
+            "title": "Male"
+          },
+          {
+            "id": 2,
+            "name": "female",
+            "label": "Female",
+            "selected": false,
+            "title": "Female"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "EmploymentStatus",
+        "label": "Employment Status",
+        "type": "select",
+        "defaultvalue": "Select your Employment Status",
+        "title": "Sex",
+        "option": [
+          {
+            "id": 1,
+            "name": "FullTime",
+            "label": "Full Time",
+            "selected": true,
+            "title": "Full Time"
+          },
+          {
+            "id": 2,
+            "name": "partTime",
+            "label": "Part Time",
+            "selected": false,
+            "title": "Part Time"
+          }
+        ]
+      }
+    ]
+  }
+}

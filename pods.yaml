@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: track-any-deployment
+  labels:
+    app: track-any-deployment
+spec:
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app: track-any-deployment
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 2
+  template:
+    metadata:
+      labels:
+        app: track-any-deployment
+        tier: service
+    spec:
+      containers:
+      - name: track-any-deployment
+        image: somasundar/trackany:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080

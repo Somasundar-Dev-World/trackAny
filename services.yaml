@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: track-any-service
+spec:
+  type: LoadBalancer
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8080
+  selector:
+    app: track-any-deployment
+

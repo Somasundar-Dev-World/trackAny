@@ -1,0 +1,11 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: track-any-deployment
+  labels:
+    app: track-any-deployment
+    tier: backend
+spec:
+  backend:
+    serviceName: track-any-deployment
+    servicePort: 8080

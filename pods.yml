@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: trackAny
+  labels:
+    app: trackAny
+spec:
+  containers:
+  - name: trackAny
+    image: somasundar/trackany:latest
+    ports:
+    - containerPort: 8080
